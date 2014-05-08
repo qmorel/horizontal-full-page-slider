@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input, button, textarea{
+	outline: none;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: none;
+}
+/*END RESET */
+/* Génaral*/
+
+@bleu: #6991ac;
+@blanc: #fff;
+@bleu_fonce : #407395;
+.border-box{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font-size: 14px;
+	font-family: 'Arimo';
+}
+.slides{
+	position: relative;
+	.border-box;
+	padding-bottom: 3em;
+	.title-slide{
+		text-align: center;
+		font-size: 4em;
+		font-family: 'Raleway', Arial, Helvetica;
+		margin: 1.5em 0;
+	}
+}
+.btn{
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+	background-color: @bleu;
+	opacity: 0.5;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s; 
+	-o-transition: all 0.5s;
+	padding: 0.5em 1.5em;
+	font-size: 1.2em;
+	margin-top: 1.5em;
+	&:hover{
+		opacity: 1;
+		background-color: @bleu_fonce;
+	}
+}
+.slides{
+	position: relative;
+	overflow:hidden;
+	width: 100%;
+	color: @bleu;
+	.slide-button{
+		display: inline-block;
+		position: absolute;
+		font-size: 1.2em;
+		top: 50% - 3.5em;
+		background-color: @bleu;
+		z-index: 3;
+		opacity: 0.5;
+		padding: 0.5em;
+		cursor: pointer;
+		transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-webkit-transition: all 0.5s; 
+		-o-transition: all 0.5s;
+		&:hover{
+			opacity: 1;
+			background-color: F@bleu_fonce;
+		}
+		img{
+			width: 2em;
+			display: block;
+			height: auto;
+		}
+	}
+	.slide-button-right{
+		right: 0;
+	}
+	.slide-button-left{
+		left: 0;
+	}
+	.wrapper-fullsize-slider{
+		position: absolute;
+		left: 0;
+		height: 100%;
+		.slide-portfolio{
+			height: 100%;
+			position: absolute;
+			/*box-shadow: -5px 0px 0px 0px @bleu inset;*/
+			padding: 0 4em;
+			.border-box;
+		}
+	}
+}
+footer{
+	text-align: center;
+	background-color: @bleu;
+	color: @blanc;
+	font-size: 0.8em;
+	padding: 1em 0;
+	font-family: 'Raleway';
+	a{
+		color: @blanc;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	#moi{
+		font-weight: bold;
+	}
+}
