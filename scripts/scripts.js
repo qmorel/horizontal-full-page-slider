@@ -19,7 +19,7 @@ function Resize(){
 *	Fonction: HorizontalSlider
 *	Arguments: 	wrapperSlider: class'name of the slider wrapper
 *				slideClass: name of the class present on each full page slide
-*				btnSlideClass: name of the class given to the slide button
+*				btnSlideClass: name of the class given to the slide buttons
 *
 */
 function HorizontalSlider(wrapperSlider, slideClass, btnSlideClass){
