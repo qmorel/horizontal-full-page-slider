@@ -6,4 +6,4 @@ This code use jQuery for the javascript part, Less (using LessJs) for the CSS
 
 How to use
 ===
-See the exemple to see the fonction to call and the html stucture to use
+See the exemple to see how to call the fonction and the html stucture to use it
